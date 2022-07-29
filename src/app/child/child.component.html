@@ -1,0 +1,19 @@
+<p>Data frpm Parent</p>
+<p>First Name: {{pdata}}</p>
+<p>Last Name: {{pdata2}}</p>
+<p>Parent Agree: {{pAgree}}</p>
+<p>Full Name: {{pdata}} {{pdata2}}</p>
+<p>Full Name [childdata]: {{childdata}}</p>
+
+
+<hr>
+
+<p>All List</p>
+<p *ngFor="let data of listData">{{data}}</p>
+
+<hr>
+
+<p>Data above 300</p>
+<p *ngFor="let student of studentsData">
+    Id: {{student.id}} | Name: {{student.name}} | marks: {{student.marks}}
+</p>

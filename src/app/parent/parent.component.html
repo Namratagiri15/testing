@@ -1,0 +1,20 @@
+<p>parent works!</p>
+<input type="text" #data placeholder="name">
+<input type="text" #newdata placeholder="surname">
+<button (click)="onSend(data, newdata)">Send</button>
+<p>Agree</p>
+<input type="checkbox" #checkbox (click)="onCheck(checkbox)">
+
+<hr>
+<input type="text" #list placeholder="list">
+<button (click)="onSendList(list)">Send</button>
+
+<app-child [pdata]="data1" [pdata2]="data2" [pAgree]="checkData" [listData]="allData">
+
+</app-child>
+
+<hr>
+
+<p *ngFor="let student of studentData">
+    Id: {{student.id}} | Name: {{student.name}} | marks: {{student.marks}}
+</p>
